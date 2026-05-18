@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYANANJ ERP</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Project Styles -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/Header.css" />
+    <link rel="stylesheet" href="./css/Hero.css" />
+    <link rel="stylesheet" href="./css/About.css" />
+    <link rel="stylesheet" href="./css/Services.css" />
+    <link rel="stylesheet" href="./css/CTA.css" />
+    <link rel="stylesheet" href="./css/Footer.css" />
+
+    <!-- Lucide Icons Script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Fixes for pure HTML vs React */
+        body { padding-top: 80px; } /* Header offset */
+        .swiper-button-next, .swiper-button-prev { color: rgba(255, 255, 255, 0.7) !important; }
+        .swiper-button-next:hover, .swiper-button-prev:hover { color: var(--primary-color) !important; }
+        .hero-section { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="top-bar-inner">
+                <div class="top-bar-left">
+                    <a href="mailto:info@gyananj.in" class="contact-item"><i data-lucide="mail" style="width: 14px; height: 14px;"></i> info@gyananj.in</a>
+                    <span class="divider">|</span>
+                    <a href="tel:+919312935530" class="contact-item"><i data-lucide="phone" style="width: 14px; height: 14px;"></i> +91 9312935530</a>
+                </div>
+                <div class="top-bar-right">
+                    <a href="#" class="hiring-link">We are Hiring</a>
+                    <span class="divider">|</span>
+                    <div class="top-socials">
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="share-2" style="width: 14px; height: 14px;"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="camera" style="width: 14px; height: 14px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-nav-wrapper">
+            <div class="main-nav">
+                <div class="logo">
+                    <a href="/">
+                        <img src="./assets/logo.png" alt="GYANANJ ERP" height="45" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                        <span style="display:none; font-size: 1.5rem; font-weight: 800; color: var(--primary-color);">GYANANJ <span style="color: var(--secondary-color);">ERP</span></span>
+                    </a>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="home-icon-link">
+                                <i data-lucide="home" style="width: 18px; height: 18px;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="#">About Us <i data-lucide="chevron-down" class="dropdown-icon" style="width: 14px; height: 14px;"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">GYANANJ Overview</a></li>
+                                <li><a href="#">Leadership</a></li>
+                                <li><a href="#">Why GYANANJ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mega-menu-parent">
+                            <a href="#">Technology & Solutions <i data-lucide="chevron-down" class="dropdown-icon" style="width: 14px; height: 14px;"></i></a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-watermark">Trusted Microsoft Solutions Partner</div>
+                                <div class="mega-menu-content">
+                                    <div class="mega-menu-col">
+                                        <div class="mega-menu-section">
+                                            <h4>Enterprise Solutions</h4>
+                                            <ul>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Microsoft Dynamics 365 Business Central</a></li>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Microsoft Dynamics 365 Finance & Operations</a></li>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Microsoft Dynamics 365 Customer Engagement (CRM)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-section">
+                                            <h4>Business Process Automation</h4>
+                                            <ul>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Microsoft Dynamics 365 - Power Automate</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-section">
+                                            <h4>AI-Powered Solutions</h4>
+                                            <ul>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Microsoft Dynamics 365 - Copilot</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu-col">
+                                        <div class="mega-menu-section">
+                                            <h4>Business Analytics</h4>
+                                            <ul>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Microsoft Dynamics 365 - Power BI</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-section">
+                                            <h4>Power Apps Development Services</h4>
+                                            <ul>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Microsoft Dynamics 365 - Power Apps</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-section">
+                                            <h4>Cloud Computing Solutions</h4>
+                                            <ul>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Microsoft 365</a></li>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Microsoft Cloud Security</a></li>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Microsoft Azure</a></li>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Microsoft Fabric</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu-col">
+                                        <div class="mega-menu-section">
+                                            <h4>GST Solutions</h4>
+                                            <ul>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> E-invoice & E-way Bill</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-section">
+                                            <h4>Add On Developments</h4>
+                                            <ul>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Custom Development</a></li>
+                                                <li><a href="#"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Ready Add-Ons</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="#">Services <i data-lucide="chevron-down" class="dropdown-icon" style="width: 14px; height: 14px;"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Implementation Services</a></li>
+                                <li><a href="#">Migration & Upgrade</a></li>
+                                <li><a href="#">Training and Support</a></li>
+                                <li><a href="#">Consulting Services</a></li>
+                                <li><a href="#">Banking & Finance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="#">Digital Transformation <i data-lucide="chevron-down" class="dropdown-icon" style="width: 14px; height: 14px;"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Azure Cloud</a></li>
+                                <li><a href="#">AWS Cloud</a></li>
+                                <li><a href="#">System Integration</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="#">Industries <i data-lucide="chevron-down" class="dropdown-icon" style="width: 14px; height: 14px;"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Manufacturing</a></li>
+                                <li><a href="#">Retail</a></li>
+                                <li><a href="#">Hospitality</a></li>
+                                <li><a href="#">Banking & Finance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="#" class="connect-text-btn">
+                        <i data-lucide="handshake" class="connect-icon" style="width: 18px; height: 18px;"></i> Connect with Us
+                    </a>
+                    <button class="mobile-toggle" onclick="toggleMobileMenu()">
+                        <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-inner" style="background-image: url('./assets/hero-bg.png')">
+                        <div class="slide-overlay"></div>
+                        <div class="container slide-content">
+                            <div class="content-wrapper animate-fade-in">
+                                <h1>Digital Transformation Journey</h1>
+                                <p>Unlock true potential with our powerful Cloud and AI solutions tailored for your enterprise.</p>
+                                <a href="#" class="hero-btn">Know More <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-inner" style="background-image: url('./assets/about-image.png')">
+                        <div class="slide-overlay"></div>
+                        <div class="container slide-content">
+                            <div class="content-wrapper">
+                                <h1>Accelerate Your Growth</h1>
+                                <p>Streamline operations using Microsoft Dynamics 365. End-to-end implementation and consulting.</p>
+                                <a href="#" class="hero-btn">Know More <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-inner" style="background-image: url('./assets/service-tech.png')">
+                        <div class="slide-overlay"></div>
+                        <div class="container slide-content">
+                            <div class="content-wrapper">
+                                <h1>Global ERP Rollouts</h1>
+                                <p>We provide seamless migration and secure data strategies for robust infrastructure modernization.</p>
+                                <a href="#" class="hero-btn">Know More <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-inner" style="background-image: url('./assets/bc-365.png')">
+                        <div class="slide-overlay"></div>
+                        <div class="container slide-content">
+                            <div class="content-wrapper">
+                                <h1>Global ERP Rollouts</h1>
+                                <p>We provide seamless migration and secure data strategies for robust infrastructure modernization.</p>
+                                <a href="#" class="hero-btn">Know More <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img src="./assets/about-image.png" alt="About GYANANJ ERP" class="about-image" onerror="this.style.display='none'" />
+                    <div class="experience-badge">
+                        <span class="years">5+</span>
+                        <span class="text">Years of<br />Experience</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <div class="section-title left">
+                        <h2>Why Choose GYANANJ ERP?</h2>
+                    </div>
+                    <p class="lead-text">
+                        We are a trusted Microsoft Certified Partner dedicated to transforming businesses through innovative digital solutions.
+                    </p>
+                    <p>
+                        With expertise in multiple Tier I and Tier II products, our consulting and implementation services are designed to address your unique business challenges. We specialize in implementing and managing Microsoft Dynamics products to drive efficiency and growth.
+                    </p>
+
+                    <ul class="about-list">
+                        <li>
+                            <i data-lucide="check-circle" class="check-icon" style="width: 20px; height: 20px;"></i>
+                            <span>Global & Regional ERP Rollouts</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle" class="check-icon" style="width: 20px; height: 20px;"></i>
+                            <span>ERP System Re-Implementations & Upgrades</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle" class="check-icon" style="width: 20px; height: 20px;"></i>
+                            <span>Power Platform Consulting & Implementation</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle" class="check-icon" style="width: 20px; height: 20px;"></i>
+                            <span>End-User Training and ERP Adoption Support</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn btn-primary mt-4">Discover More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Our Expertise & Solutions</h2>
+                <p>Delivering comprehensive digital transformation solutions tailored to your industry.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="database" style="width: 40px; height: 40px;"></i></div>
+                    <h3>Enterprise Solutions</h3>
+                    <p>Microsoft Dynamics 365 Business Central, Finance & Operations, and CRM to streamline your business operations.</p>
+                    <a href="#" class="service-link">Learn More <span>&rarr;</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="cog" style="width: 40px; height: 40px;"></i></div>
+                    <h3>Business Process Automation</h3>
+                    <p>Optimize workflows and eliminate manual tasks with Microsoft Power Automate.</p>
+                    <a href="#" class="service-link">Learn More <span>&rarr;</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="code" style="width: 40px; height: 40px;"></i></div>
+                    <h3>AI-Powered Solutions</h3>
+                    <p>Leverage Microsoft Dynamics 365 Copilot for intelligent, AI-driven business insights and automation.</p>
+                    <a href="#" class="service-link">Learn More <span>&rarr;</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="bar-chart" style="width: 40px; height: 40px;"></i></div>
+                    <h3>Business Analytics</h3>
+                    <p>Transform data into actionable insights with Microsoft Power BI dashboards and reporting.</p>
+                    <a href="#" class="service-link">Learn More <span>&rarr;</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="cloud" style="width: 40px; height: 40px;"></i></div>
+                    <h3>Cloud Computing Solutions</h3>
+                    <p>Secure and scalable infrastructure with Microsoft Azure, Microsoft 365, and Fabric.</p>
+                    <a href="#" class="service-link">Learn More <span>&rarr;</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="shield" style="width: 40px; height: 40px;"></i></div>
+                    <h3>IT Audit & Compliance</h3>
+                    <p>Comprehensive security risk assessment, IT controls, and compliance audits for your infrastructure.</p>
+                    <a href="#" class="service-link">Learn More <span>&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta section-padding text-center">
+        <div class="container">
+            <h2 class="cta-title">Ready to Transform Your Business?</h2>
+            <p class="cta-desc">
+                Partner with us to implement Microsoft Dynamics solutions tailored for your enterprise. Let's build your digital future together.
+            </p>
+            <div class="cta-actions">
+                <a href="#" class="btn btn-primary cta-btn">Schedule a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <h2 class="footer-logo">GYANANJ <span class="logo-accent">ERP</span></h2>
+                    <p class="footer-desc black">
+                        Trusted Certified Software Solutions for ERP Consulting, Implementation Services and Empowering Digital Transformation journey.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon black"><i data-lucide="share-2" style="width: 20px; height: 20px;"></i></a>
+                        <a href="#" class="social-icon black"><i data-lucide="twitter" style="width: 20px; height: 20px;"></i></a>
+                        <a href="#" class="social-icon black"><i data-lucide="globe" style="width: 20px; height: 20px;"></i></a>
+                        <a href="#" class="social-icon black"><i data-lucide="message-circle" style="width: 20px; height: 20px;"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="black">About Us</a></li>
+                        <li><a href="#" class="black">Technology & Solutions</a></li>
+                        <li><a href="#" class="black">Services</a></li>
+                        <li><a href="#" class="black">Insights</a></li>
+                        <li><a href="#" class="black">Industries</a></li>
+                        <li><a href="#" class="black">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="black">Implementation Services</a></li>
+                        <li><a href="#" class="black">Migration & Upgrades</a></li>
+                        <li><a href="#" class="black">Training & Support</a></li>
+                        <li><a href="#" class="black">IT Audit & Compliance</a></li>
+                        <li><a href="#" class="black">Consulting Services</a></li>
+                        <li><a href="#" class="black">Financial Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i data-lucide="map-pin" class="contact-icon" style="width: 18px; height: 18px;"></i>
+                            <span class="black">Hazaribagh, Jharkhand (India) Headquarters, Innovation Hub - 825301</span>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin" class="contact-icon" style="width: 18px; height: 18px;"></i>
+                            <span class="black">Sultanpur, New Delhi (India), Development Hub - 110030</span>
+                        </li>
+                        <li>
+                            <i data-lucide="mail" class="contact-icon" style="width: 18px; height: 18px;"></i>
+                            <a href="mailto:info@gyananj.in" class="black">info@gyananj.in</a>
+                        </li>
+                        <li>
+                            <i data-lucide="phone" class="contact-icon" style="width: 18px; height: 18px;"></i>
+                            <a href="tel:+919312935530" class="black">+91 9312935530</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p>&copy; 2026 GYANANJ ERP. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#" class="black">Privacy Policy</a>
+                        <a href="#" class="black">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                document.querySelector('.header').classList.add('scrolled');
+            } else {
+                document.querySelector('.header').classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            document.querySelector('.nav-menu').classList.toggle('open');
+        }
+
+        // Initialize Swiper
+        const swiper = new Swiper('.hero-swiper', {
+            loop: true,
+            effect: 'fade',
+            speed: 1000,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
